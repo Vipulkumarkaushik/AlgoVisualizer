@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AlgoVisualizer Pro</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>AlgoVisualizer Pro</h1>
+
+    <div class="controls">
+      <select id="algorithm">
+        <option value="bubble">Bubble Sort</option>
+        <option value="selection">Selection Sort</option>
+        <option value="insertion">Insertion Sort</option>
+        <option value="merge">Merge Sort</option>
+        <option value="quick">Quick Sort</option>
+      </select>
+
+      <label for="size">Size:</label>
+      <input type="range" id="size" min="10" max="100" value="50" />
+
+      <label for="speed">Speed:</label>
+      <input type="range" id="speed" min="1" max="100" value="50" />
+
+      <button id="start">Start</button>
+      <button id="shuffle">Shuffle</button>
+      <button id="toggleTheme">Toggle Theme</button>
+    </div>
+
+    <div id="bar-container"></div>
+
+    <div class="info">
+      <h3>Algorithm Info</h3>
+      <p id="description">Select an algorithm to see how it works.</p>
+      <pre id="code"></pre>
+      <p><strong>Time Complexity:</strong> <span id="complexity">-</span></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
